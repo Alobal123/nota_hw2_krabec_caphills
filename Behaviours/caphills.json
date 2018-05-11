@@ -1,0 +1,93 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"31IFHhQSsMTYRUMgy0sOVo1jx6zCSYdP": {
+			"height": 94,
+			"title": "store",
+			"width": 260,
+			"x": 449,
+			"y": -131
+		},
+		"EclvWtfuwlZxv02FbdROdFmznmDeEWeS": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 231,
+			"y": 55
+		},
+		"Qclzx3KXYYm85xANLCMCdmIZqV4VX8cC": {
+			"height": 131,
+			"title": "echo",
+			"width": 230,
+			"x": 446,
+			"y": -42
+		},
+		"VZOBSuLRkGKn05PtSCdn7votEeArQ5il": {
+			"height": 92,
+			"title": "nota_hw2_krabec_caphills.splitMove",
+			"width": 293,
+			"x": 440,
+			"y": 109
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "31IFHhQSsMTYRUMgy0sOVo1jx6zCSYdP",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "x"
+			}, {
+				"name": "value",
+				"value": "Hills()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "Qclzx3KXYYm85xANLCMCdmIZqV4VX8cC",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "msg",
+				"value": "x"
+			}, {
+				"name": "scriptName",
+				"value": "echo"
+			} ],
+			"scriptName": "echo"
+		}, {
+			"children": [],
+			"id": "VZOBSuLRkGKn05PtSCdn7votEeArQ5il",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "positions",
+				"value": "x"
+			}, {
+				"name": "N",
+				"value": "3"
+			}, {
+				"name": "scriptName",
+				"value": "nota_hw2_krabec_caphills.splitMove"
+			} ],
+			"scriptName": "nota_hw2_krabec_caphills.splitMove"
+		} ],
+		"id": "EclvWtfuwlZxv02FbdROdFmznmDeEWeS",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
