@@ -31,7 +31,7 @@ function isNewHill(spots, newSpot)
 end
 
 
--- @description return current wind statistics
+-- @description return list of all hills
 return function()
 	--local X,Z = Game.mapSizeX/Game.squareSize , Game.mapSizeZ/Game.squareSize
 	local X,Z = Game.mapSizeX , Game.mapSizeZ
