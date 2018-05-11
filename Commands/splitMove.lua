@@ -22,10 +22,6 @@ end
 -- speed-ups
 local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
 
-local function ClearState(self)
-
-end
-
 function Run(self, units, parameter)
 	local hills = parameter.positions -- Vec3
 	local N = parameter.N
@@ -39,9 +35,6 @@ function Run(self, units, parameter)
 	
 	-- pick the spring command implementing the move
 	local cmdID = CMD.MOVE
-	
-	-- check pointman success
-	-- THIS LOGIC IS TEMPORARY, NOT CONSIDERING OTHER UNITS POSITION
 		
 	for i=1, N do
 		local thisUnitWantedPosition = hills[i]
@@ -53,5 +46,5 @@ end
 
 
 function Reset(self)
-	ClearState(self)
+	
 end
