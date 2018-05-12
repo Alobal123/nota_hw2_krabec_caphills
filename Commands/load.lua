@@ -33,7 +33,9 @@ function Run(self, units, parameter)
 	local rad = parameter.radius
 	local x,y,z = pos["x"],pos["y"],pos["z"]
 	local cmdID = CMD.LOAD_UNITS
-	SpringGiveOrderToUnit(units[1], cmdID,{x,y,z,rad},{})
+	for i=1,#units do
+		SpringGiveOrderToUnit(units[i], cmdID,{x,y,z,rad},{})
+	end
 	if(tick<10) then
 		return RUNNING
 	end

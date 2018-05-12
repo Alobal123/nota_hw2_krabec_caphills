@@ -27,16 +27,10 @@ function Run(self, units, parameter)
 	local N = parameter.N
 	--Spring.Echo(dump(parameter.formation))
 	
-	-- validation
-	if (#units < N) then
-		Logger.warn("formation.move", "Your formation size [" .. #formation .. "] is smaller than needed for given count of units [" .. #units .. "] in this group.") 
-		return FAILURE
-	end
-	
 	-- pick the spring command implementing the move
 	local cmdID = CMD.MOVE
 		
-	for i=0, N-1 do
+	for i=1, math.min(N, #units) do
 		local thisUnitWantedPosition = hills[i]
 		SpringGiveOrderToUnit(units[i], cmdID, thisUnitWantedPosition:AsSpringVector(), {})
 	end

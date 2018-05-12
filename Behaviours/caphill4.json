@@ -37,8 +37,8 @@
 			"height": 72,
 			"title": "echo",
 			"width": 131,
-			"x": 670,
-			"y": -87
+			"x": 700,
+			"y": -86
 		},
 		"nseQO9RY5aB3yssf0ath4ylkJI3VBnY2": {
 			"height": 60,
@@ -46,13 +46,20 @@
 			"width": 143,
 			"x": 527,
 			"y": 12
+		},
+		"t1BMefvUr8hAMn0p0b0gKHzrVYisGctp": {
+			"height": 92,
+			"title": "nota_hw2_krabec_caphills.MyMove",
+			"width": 287,
+			"x": 705,
+			"y": 195
 		}
 	},
 	"roles": [ {
 		"categories": [ "nota_hw2_krabec_caphills.bear" ],
 		"name": "Role 0"
 	}, {
-		"categories": [],
+		"categories": [ "nota_hw2_krabec_caphills.warrior" ],
 		"name": "Role 2"
 	} ],
 	"root": {
@@ -78,7 +85,7 @@
 					"value": "hillss[0]"
 				}, {
 					"name": "tolerance",
-					"value": "150"
+					"value": "200"
 				}, {
 					"name": "scriptName",
 					"value": "nota_hw2_krabec_caphills.MyMove"
@@ -96,6 +103,21 @@
 					"value": "nota_hw2_krabec_caphills.unload"
 				} ],
 				"scriptName": "nota_hw2_krabec_caphills.unload"
+			}, {
+				"children": [],
+				"id": "t1BMefvUr8hAMn0p0b0gKHzrVYisGctp",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "position",
+					"value": "hillss[0]"
+				}, {
+					"name": "tolerance",
+					"value": "20"
+				}, {
+					"name": "scriptName",
+					"value": "nota_hw2_krabec_caphills.MyMove"
+				} ],
+				"scriptName": "nota_hw2_krabec_caphills.MyMove"
 			} ],
 			"id": "nseQO9RY5aB3yssf0ath4ylkJI3VBnY2",
 			"nodeType": "sequence",

@@ -26,8 +26,10 @@ function Run(self, units, parameter)
 	local rad = parameter.radius
 
 	local cmdID = CMD.UNLOAD_UNITS
-	SpringGiveOrderToUnit(units[1], cmdID,{x,y,z,rad},{})
-	if(tick<20) then
+	for i=1,#units do
+		SpringGiveOrderToUnit(units[i], cmdID,{x,y,z,rad},{})
+	end
+	if(tick<10) then
 		return RUNNING
 	end
 	return SUCCESS
