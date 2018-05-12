@@ -1,0 +1,111 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 110,
+			"width": 216
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"QqkQIcEsF82atkg22jxwtPW21dO0ucYm": {
+			"height": 92,
+			"title": "nota_hw2_krabec_caphills.MyMove",
+			"width": 287,
+			"x": 452,
+			"y": 80
+		},
+		"SD8THh9hruBohnHBMOOlfnfaorvLDDSK": {
+			"height": 92,
+			"title": "nota_hw2_krabec_caphills.load",
+			"width": 260,
+			"x": 766,
+			"y": 163
+		},
+		"dwxjSXxqk7bn3yZAjqja2K8oXcp9SmOu": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 452,
+			"y": 181
+		},
+		"sThhsYdVJ3mLTdyPHCZVkQwdqRKJTEsG": {
+			"height": 101,
+			"title": "sequence",
+			"width": 173,
+			"x": 229,
+			"y": -11
+		},
+		"wq87lYlATRGhX9p10aYyZ7S9Xrwqyzac": {
+			"height": 94,
+			"title": "store",
+			"width": 359,
+			"x": 459,
+			"y": -60
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_hw2_krabec_caphills.bear" ],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "wq87lYlATRGhX9p10aYyZ7S9Xrwqyzac",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "pos"
+			}, {
+				"name": "value",
+				"value": "nota_hw2_krabec_caphills.CenterPosition()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "QqkQIcEsF82atkg22jxwtPW21dO0ucYm",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "position",
+				"value": "pos"
+			}, {
+				"name": "tolerance",
+				"value": "50"
+			}, {
+				"name": "scriptName",
+				"value": "nota_hw2_krabec_caphills.MyMove"
+			} ],
+			"scriptName": "nota_hw2_krabec_caphills.MyMove"
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "SD8THh9hruBohnHBMOOlfnfaorvLDDSK",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "position",
+					"value": "pos"
+				}, {
+					"name": "radius",
+					"value": "100"
+				}, {
+					"name": "scriptName",
+					"value": "nota_hw2_krabec_caphills.load"
+				} ],
+				"scriptName": "nota_hw2_krabec_caphills.load"
+			} ],
+			"id": "dwxjSXxqk7bn3yZAjqja2K8oXcp9SmOu",
+			"nodeType": "roleSplit",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "sThhsYdVJ3mLTdyPHCZVkQwdqRKJTEsG",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

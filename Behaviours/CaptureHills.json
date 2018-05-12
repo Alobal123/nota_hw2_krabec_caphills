@@ -1,0 +1,139 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"2YfNG7WgOG5s4dY6WUA5M92JdPQxYzc4": {
+			"height": 130,
+			"title": "reference",
+			"width": 320,
+			"x": 513,
+			"y": 354
+		},
+		"3TlX80j2jg6cfWwObBCS717APUnUKPJm": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 659,
+			"y": 301
+		},
+		"9Bmd8A1JVBAHzXm103HAwYiJi1SVxpdg": {
+			"height": 94,
+			"title": "store",
+			"width": 292,
+			"x": 466,
+			"y": -92
+		},
+		"DLW6QkQxSE6IEMyoHWqX0oXTaLmPGxNX": {
+			"height": 130,
+			"title": "reference",
+			"width": 350,
+			"x": 461,
+			"y": 3
+		},
+		"EUAKBO1UedbOWqV6pOAVzjJ8LABtoQ5H": {
+			"height": 151,
+			"title": "reference",
+			"width": 297,
+			"x": 647,
+			"y": 132
+		},
+		"uNxhTD2uXh1eWv9lK6as7gBfEOzgYSlV": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 458,
+			"y": 166
+		},
+		"vyIefgcqrseAq3FhTFY4o6ZGSUnuwXKm": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 266,
+			"y": 9
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_hw2_krabec_caphills.bear" ],
+		"name": "Role 0"
+	}, {
+		"categories": [],
+		"name": "Role 2"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "9Bmd8A1JVBAHzXm103HAwYiJi1SVxpdg",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "hillss"
+			}, {
+				"name": "value",
+				"value": "nota_hw2_krabec_caphills.Hills()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "DLW6QkQxSE6IEMyoHWqX0oXTaLmPGxNX",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_hw2_krabec_caphills.GatherAndLoad"
+			} ],
+			"referenceInputs": [],
+			"referenceOutputs": []
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "EUAKBO1UedbOWqV6pOAVzjJ8LABtoQ5H",
+				"nodeType": "reference",
+				"parameters": [ {
+					"name": "behaviourName",
+					"value": "nota_hw2_krabec_caphills.caphill4"
+				} ],
+				"referenceInputs": [ {
+					"name": "hillss",
+					"value": "hillss"
+				} ],
+				"referenceOutputs": []
+			}, {
+				"children": [],
+				"id": "3TlX80j2jg6cfWwObBCS717APUnUKPJm",
+				"nodeType": "wait",
+				"parameters": [ {
+					"name": "time",
+					"value": 10
+				} ]
+			} ],
+			"id": "uNxhTD2uXh1eWv9lK6as7gBfEOzgYSlV",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "2YfNG7WgOG5s4dY6WUA5M92JdPQxYzc4",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_hw2_krabec_caphills.caphills123"
+			} ],
+			"referenceInputs": [ {
+				"name": "hillss",
+				"value": "hillss"
+			} ],
+			"referenceOutputs": []
+		} ],
+		"id": "vyIefgcqrseAq3FhTFY4o6ZGSUnuwXKm",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

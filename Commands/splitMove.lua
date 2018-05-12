@@ -36,7 +36,7 @@ function Run(self, units, parameter)
 	-- pick the spring command implementing the move
 	local cmdID = CMD.MOVE
 		
-	for i=1, N do
+	for i=0, N-1 do
 		local thisUnitWantedPosition = hills[i]
 		SpringGiveOrderToUnit(units[i], cmdID, thisUnitWantedPosition:AsSpringVector(), {})
 	end

@@ -2,33 +2,22 @@
 	"additionalNodes": [],
 	"additionalParameters": {
 		"root": {
-			"height": 88,
-			"width": 180
+			"height": 108,
+			"width": 216
 		}
 	},
-	"inputs": [],
+	"inputs": [ {
+		"command": "Variable",
+		"name": "hillss"
+	} ],
 	"outputs": [],
 	"properties": {
-		"31IFHhQSsMTYRUMgy0sOVo1jx6zCSYdP": {
-			"height": 94,
-			"title": "store",
-			"width": 260,
-			"x": 695,
-			"y": -131
-		},
 		"8bX7IuNqYmAQCUEAZOCHHoknjNkOFexZ": {
 			"height": 94,
 			"title": "store",
 			"width": 167,
 			"x": 968,
 			"y": 196
-		},
-		"EclvWtfuwlZxv02FbdROdFmznmDeEWeS": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 499,
-			"y": -68
 		},
 		"GtgBjR5ntp28pEKtpdNZjXHglWGQCS2i": {
 			"height": 70,
@@ -41,8 +30,8 @@
 			"height": 94,
 			"title": "store",
 			"width": 286,
-			"x": 733,
-			"y": 104
+			"x": 794,
+			"y": 98
 		},
 		"MgAoSoAeHELJt7WBkm5rbUpT4jInvab7": {
 			"height": 60,
@@ -51,19 +40,33 @@
 			"x": 456,
 			"y": 146
 		},
+		"PaACIiYVHdsSfzJWHzXNVhsoURG9wBCS": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 753,
+			"y": -90
+		},
 		"QFoD71L2SzEYPAhTU33ffJGk9lswfq6U": {
 			"height": 90,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 728,
-			"y": 235
+			"x": 775,
+			"y": 232
 		},
 		"VZOBSuLRkGKn05PtSCdn7votEeArQ5il": {
 			"height": 92,
 			"title": "nota_hw2_krabec_caphills.splitMove",
 			"width": 293,
-			"x": 705,
-			"y": -22
+			"x": 749,
+			"y": 2
+		},
+		"l6IJ66U2A6UeYpBwoOnRkDJ3DDW8vccO": {
+			"height": 70,
+			"title": "roleSplit",
+			"width": 202,
+			"x": 502,
+			"y": -17
 		},
 		"mK3ULjMeqB0YemxUOgi4ei822p2IajYI": {
 			"height": 60,
@@ -81,26 +84,22 @@
 		}
 	},
 	"roles": [ {
-		"categories": [],
+		"categories": [ "nota_hw2_krabec_caphills.bear" ],
 		"name": "Role 0"
+	}, {
+		"categories": [],
+		"name": "Role 2"
 	} ],
 	"root": {
 		"children": [ {
 			"children": [ {
 				"children": [],
-				"id": "31IFHhQSsMTYRUMgy0sOVo1jx6zCSYdP",
-				"nodeType": "luaCommand",
+				"id": "PaACIiYVHdsSfzJWHzXNVhsoURG9wBCS",
+				"nodeType": "wait",
 				"parameters": [ {
-					"name": "var",
-					"value": "hillss"
-				}, {
-					"name": "value",
-					"value": "Hills()"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
+					"name": "time",
+					"value": 100000
+				} ]
 			}, {
 				"children": [],
 				"id": "VZOBSuLRkGKn05PtSCdn7votEeArQ5il",
@@ -110,16 +109,19 @@
 					"value": "hillss"
 				}, {
 					"name": "N",
-					"value": "3"
+					"value": "4"
 				}, {
 					"name": "scriptName",
 					"value": "nota_hw2_krabec_caphills.splitMove"
 				} ],
 				"scriptName": "nota_hw2_krabec_caphills.splitMove"
 			} ],
-			"id": "EclvWtfuwlZxv02FbdROdFmznmDeEWeS",
-			"nodeType": "sequence",
-			"parameters": []
+			"id": "l6IJ66U2A6UeYpBwoOnRkDJ3DDW8vccO",
+			"nodeType": "roleSplit",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
 		}, {
 			"children": [ {
 				"children": [ {
@@ -166,7 +168,7 @@
 					"nodeType": "luaCondition",
 					"parameters": [ {
 						"name": "expression",
-						"value": "info[\"score\"] > 60"
+						"value": "info[\"score\"] > 85"
 					}, {
 						"name": "repeat",
 						"value": "true"
