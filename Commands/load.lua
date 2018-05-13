@@ -1,3 +1,4 @@
+-- This command loads all units in area nearby position, in radius 
 local testBuildOrder = Spring.TestBuildOrder
 local giveOrderToUnit = Spring.GiveOrderToUnit
 
@@ -36,6 +37,7 @@ function Run(self, units, parameter)
 	for i=1,#units do
 		SpringGiveOrderToUnit(units[i], cmdID,{x,y,z,rad},{})
 	end
+	-- Give some time for loading, TODO should be calculed given number of units which need to load
 	if(tick<10) then
 		return RUNNING
 	end

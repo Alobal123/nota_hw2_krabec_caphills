@@ -1,3 +1,4 @@
+-- copied from trello
 local sensorInfo = {
 	name = "EndMission",
 	desc = "ends the mission",

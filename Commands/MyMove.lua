@@ -1,3 +1,5 @@
+--Simple move command which does not keep formation.
+
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
@@ -41,6 +43,7 @@ function Run(self, units, parameter)
 		SpringGiveOrderToUnit(units[i], cmdID, thisUnitWantedPosition:AsSpringVector(), {})
 	end
 	
+	-- We return success once each unit is close enough to the target location
 	for i=1,#units do
 		local x,y,z = SpringGetUnitPosition(units[i])
 		if (euclideanDistance(Vec3(x,y,z),position) > tolerance) then

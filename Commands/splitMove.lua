@@ -1,3 +1,5 @@
+-- Given some locations, this sends one unit from a group to that each location.
+
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
@@ -10,6 +12,7 @@ function getInfo()
 				defaultValue = "",
 			},
 			{ 
+				-- number of places to send units to
 				name = "N",
 				variableType = "expression",
 				componentType = "editBox",
@@ -25,11 +28,11 @@ local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
 function Run(self, units, parameter)
 	local hills = parameter.positions -- Vec3
 	local N = parameter.N
-	--Spring.Echo(dump(parameter.formation))
 	
 	-- pick the spring command implementing the move
 	local cmdID = CMD.MOVE
 		
+	-- this is hardcoded for our problem, but can be rather easily generalized
 	for i=1, math.min(N, #units) do
 		local thisUnitWantedPosition = hills[i]
 		SpringGiveOrderToUnit(units[i], cmdID, thisUnitWantedPosition:AsSpringVector(), {})

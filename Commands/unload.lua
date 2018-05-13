@@ -1,3 +1,5 @@
+--This command unloads all units. 
+-- 
 local testBuildOrder = Spring.TestBuildOrder
 local giveOrderToUnit = Spring.GiveOrderToUnit
 
@@ -29,6 +31,7 @@ function Run(self, units, parameter)
 	for i=1,#units do
 		SpringGiveOrderToUnit(units[i], cmdID,{x,y,z,rad},{})
 	end
+	-- give some time, TODO should be calculated given number of unloaded units
 	if(tick<10) then
 		return RUNNING
 	end
